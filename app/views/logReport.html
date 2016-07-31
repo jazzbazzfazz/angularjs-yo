@@ -1,0 +1,27 @@
+<h2>Logging report</h2>
+
+<p>Last 100 log entries</p>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th>Index</th>
+			<th>Time</th>
+			<th>User</th>
+			<th>IP address</th>
+			<th>Entry</th>
+		</tr>
+	</thead>
+
+	<tfoot>
+	</tfoot>
+
+	<tbody>
+		<tr ng-repeat="row in last100rows">
+			<td>{{row.id}}</td>
+			<td>{{row.logtime}}</td>
+			<td>{{row.user}}</td>
+			<td>{{row.ip}}</td>
+			<td>{{row.entry}}</td>
+	</tbody>
+</table>

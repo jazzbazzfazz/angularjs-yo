@@ -1,0 +1,11 @@
+This is a sample view!
+
+  <form method="post" ng-controller="TinyMceController">
+    <textarea ui-tinymce="tinymceOptions" ng-model="data.tinymceModel"></textarea>
+    <button ng-click="getContent()">Get content</button>
+    <button ng-click="setContent()">Set content</button>
+
+<hr>
+{{data.tinymceModel}}
+
+  </form>
