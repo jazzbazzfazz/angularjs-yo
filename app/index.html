@@ -14,9 +14,13 @@
         <!-- build:css({.tmp,app}) styles/main.css -->
         <link rel="stylesheet" href="styles/bootstrap.css">
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="bower_components/angular-dragula/dist/dragula.css">
         <link href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.min.css" rel="stylesheet">
         <link rel="stylesheet" href="styles/demo-framework.css">
         <link rel="stylesheet" href="styles/dragdrop.css">
+        <link rel="stylesheet" href="./bower_components/angular-dragula/dist/dragula.css">
+        <link rel="stylesheet" href="styles/more-dragula.css">
+        <link rel="stylesheet" href="styles/customPanel.css">
 
         <!-- endbuild -->
 </head>
@@ -36,8 +40,9 @@
     <a href="/#/sample">TinyMCE example</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="/#/calendar">Calendar example</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="/#/logReport">Full logging (under development)</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <a href="/#/dragDrop">Drag &amp; Drop</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <!-- <a href="/#/dragDrop">Drag &amp; Drop</a>&nbsp;&nbsp;|&nbsp;&nbsp; -->
     <a href="/#/customPanel">Custom panel</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="/#/dragula">Dragula</a>&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="/#/login">Login</a>
 
     
@@ -58,9 +63,10 @@
 
     <script src="bower_components/jquery/jquery.js"></script>
     <script src="bower_components/tinymce/tinymce.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
 
-    <script src="bower_components/angular/angular.js"></script> 
-
+    <script src="bower_components/angular-dragula/dist/angular-dragula.js"></script>
     <script src="scripts/angular-drag-and-drop-lists.js"></script> 
 
     <script src="bower_components/moment/moment.js"></script>
@@ -97,7 +103,12 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/TinyMceCtrl.js"></script>
+        <script src="scripts/controllers/CalendarCtrl.js"></script>        
+        <script src="scripts/controllers/LogReportCtrl.js"></script>        
+        <script src="scripts/controllers/CustomPanelCtrl.js"></script>        
         <script src="scripts/controllers/dragdropCtrl.js"></script>
+        <script src="scripts/controllers/DragulaCtrl.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,7 +1,7 @@
 /**
  * The controller doesn't do much more than setting the initial data model
  */
-angular.module("angularjsYoApp").controller("DragdropCtrl", function($scope,$log) {
+angularjsYoApp.controller("DragdropCtrl", function($scope,$log) {
 	$log.debug('Entering DragdropCtrl');
     $scope.models = {
         selected: null,

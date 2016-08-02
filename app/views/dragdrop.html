@@ -4,6 +4,9 @@
      makes an element draggable and will transfer the object that was
      assigned to it. If an element was dragged away, you have to remove
      it from the original list yourself using the dnd-moved attribute -->
+
+     <!-- Reference: see http://marceljuenemann.github.io/angular-drag-and-drop-lists/demo/#/nested -->
+
 <script type="text/ng-template" id="list.html">
     <ul dnd-list="list">
         <li ng-repeat="item in list"
@@ -45,9 +48,10 @@
     </div>
 
     <div view-source="nested"></div>
-
+<!--
     <h2>Generated Model</h2>
     <pre>{{modelAsJson}}</pre>
+-->    
 </div>
 
 <!-- Sidebar -->
@@ -78,7 +82,7 @@
         <!-- If you use [] as referenced list, the dropped elements will be lost -->
         <h3>Trashcan</h3>
         <ul dnd-list="[]">
-            <li><img src="nested/trashcan.jpg"></li>
+            <li><img src="../images/trashcan.jpg"></li>
         </ul>
     </div>
 
