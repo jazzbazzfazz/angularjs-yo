@@ -5,6 +5,8 @@
 	<div class="textitem rounded-borders"  style="position:absolute;background-color:white;margin:0;margin-left:60px;padding:0">
 		<b>{{title}}</b>
 		<br/>
-		<div style="white-space:pre-line;position:absolute;background-color:white;margin:0;padding:0">{{details}}</div>
+		<div style="position:absolute;background-color:white;margin:0;padding:0;width:100%">
+			<span ng-repeat="detail in list">{{detail}}<br/></span>
+		</div>
 	</div>
 </div>

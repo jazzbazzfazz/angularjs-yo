@@ -46,13 +46,23 @@ var angularjsYoApp = angular.module('angularjsYoApp', ['ui.tinymce', 'ngRoute', 
           controller: 'CalendarCtrl as vm'
         });
 
-
       $locationProvider.html5Mode({
         enabled: false,
         requireBase: false
       });
 
-    }])
+    }]);
+
+
+  angularjsYoApp.filter('nl2br', function(){
+      return function(text) {
+           var t = text.split("**");
+           // ? text.replace(/\*\*/g,'<br/>'):''; //(/(?:\r\n|\r|\n)/g, '<br />'):''; //.replace(/\n/g, '<br>') : '';
+           console.log(t);
+           return t;
+      };
+
+    })
 
   .controller('MainCtrl', function ($log) {
     $log.debug('Entering MainCtrl controller');

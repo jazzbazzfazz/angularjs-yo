@@ -36,6 +36,11 @@ angularjsYoApp
       link: function (scope, elem, attr, controller, transclude) {
         //elem.attr('title',scope.title);
         //elem.attr('details',scope.details);
+        console.log(scope.details);
+        var t = scope.details.split("**");
+        console.log(t);
+        scope.list = t;
+
         //elem.attr('icon',scope.icon);
         //elem.attr('when',scope.when);
         //elem.attr('color',scope.color);
